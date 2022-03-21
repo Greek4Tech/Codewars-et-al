@@ -4,10 +4,21 @@ const flip=(d, a)=>{
     if(d === 'L') return a.sort((a,b)=>b-a);
   }
 
-  // Pow of two
+// Power of two - https://www.codewars.com/kata/57a083a57cb1f31db7000028
 
 function powerOfTwo (n) {
   for (let i=0; i<=n; i++) {
     result.push(Math.pow(2,i))
   } return result;
 }
+
+//Create a function that takes in an array of numbers.  
+// Multiply each number together and alert the product. 
+
+function createArray(arr) {
+  let product = 1
+  arr.forEach(num => product *=num)
+  alert(product)
+}
+
+createArray([2, 4, 10])
