@@ -22,3 +22,12 @@ function createArray(arr) {
 }
 
 createArray([2, 4, 10])
+
+//Celsius to Fahrenheit// 
+
+function converter (celsius) {
+  let faren = celsius * 9/5 + 32
+  console.log(`${celsius} C is ${faren} F`)
+}
+
+converter(20)
