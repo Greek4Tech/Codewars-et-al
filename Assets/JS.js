@@ -23,7 +23,7 @@ function createArray(arr) {
 
 createArray([2, 4, 10])
 
-//Celsius to Fahrenheit// 
+//Celsius to Fahrenheit - https://github.com/thejsway/thejsway/blob/master/manuscript/chapter02.md
 
 function converter (celsius) {
   let faren = celsius * 9/5 + 32
@@ -31,3 +31,15 @@ function converter (celsius) {
 }
 
 converter(20)
+
+
+// Variable swapping - https://github.com/thejsway/thejsway/blob/master/manuscript/chapter02.md
+
+
+let number1 = 5;
+let number2 = 3;
+
+[number1, number2] = [number2, number1]
+
+console.log(number1); // Should show 3
+console.log(number2); // Should show 5
