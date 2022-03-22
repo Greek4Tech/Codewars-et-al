@@ -34,8 +34,6 @@ converter(20)
 
 
 // Variable swapping - https://github.com/thejsway/thejsway/blob/master/manuscript/chapter02.md
-
-
 let number1 = 5;
 let number2 = 3;
 
@@ -43,3 +41,54 @@ let number2 = 3;
 
 console.log(number1); // Should show 3
 console.log(number2); // Should show 5
+
+//Following day - https://github.com/thejsway/thejsway/blob/master/manuscript/chapter03.md
+function dayWeek (day) {
+  let dayLow = day.toLowerCase()
+  switch(dayLow) {
+    case 'monday':
+    console.log("Tuesday")
+  }
+  }
+
+//Get the Number of Days in a Month - https://github.com/thejsway/thejsway/blob/master/manuscript/chapter03.md// 
+let getDaysInMonth = function(month,year) {
+ return new Date(year, month, 0).getDate();
+};
+console.log(getDaysInMonth(1, 2012));
+console.log(getDaysInMonth(2, 2012));
+
+// Carousel - https://github.com/thejsway/thejsway/blob/master/manuscript/chapter04.md
+function carousel () {
+  let tellMe = prompt("give me a number")
+  for (let i=1; i<=tellMe; i++) {
+    console.log(i)
+  }
+}
+
+// Quarter of the year - https://www.codewars.com/kata/5ce9c1000bab0b001134f5af 
+
+function month () {
+if (month == 1 || month == 2 || month == 3) {
+  return 1 
+}
+else if (month == 4 || month == 5 || month == 6) {
+  return 2 
+}
+else if (month == 7 || month == 8 || month == 9) {
+  return 3 
+}
+else if (month == 10 || month == 11 || month == 12) {
+  return 4 
+}
+}
+
+// Twice as old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  if (dadYearsOld > 2*sonYearsOld) {
+  let x = dadYearsOld - 2*sonYearsOld
+  return x
+  } else {
+    return 2*sonYearsOld - dadYearsOld
+  }
+}
