@@ -1,3 +1,20 @@
+//Parity - https://github.com/thejsway/thejsway/blob/master/manuscript/chapter04.md/
+//odd number: x % 3 ==1
+
+let x = Number(prompt("Enter a starting number:"))
+for (let i=x; i <= x + 10; i++) {
+  if (i % 2 === 0) {
+    console.log(`${i} is even`);
+  }
+  else if (i % 2 !== 0) {
+    console.log(`${i} is odd`)
+  }
+  else {
+    console.log(`${i} is not a number`);
+  }
+}
+
+
 // Gravity Flip - https://www.codewars.com/kata/5f70c883e10f9e0001c89673/train/javascript
 const flip=(d, a)=>{
     if(d === 'R') return a.sort((a,b)=>a-b);
