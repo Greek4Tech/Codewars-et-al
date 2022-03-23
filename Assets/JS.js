@@ -1,3 +1,11 @@
+//Neither yes nor no
+
+let answer
+while (answer != "yes" && answer != "no") 
+{answer = prompt("Type something")}
+console.log("correct")
+
+
 //Multiplication table - https://github.com/thejsway/thejsway/blob/master/manuscript/chapter04.md#multiplication-table
 
 let enterNum = Number(prompt("Give me a number"))
@@ -5,7 +13,7 @@ if (enterNum >=2 && enterNum <=9) {
   for (let i= 1; i<=enterNum; i++)
     console.log(`${i} x ${enterNum} = ${i * enterNum} `)
   } else {console.log("This is not a valid number")}
-  
+
 
 //Parity - https://github.com/thejsway/thejsway/blob/master/manuscript/chapter04.md/
 
