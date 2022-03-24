@@ -1,3 +1,19 @@
+//Create a function that takes in an array of numbers
+//Alert the sum of the second lowest and the second highest number
+
+let sums = [4, 10, 90, 80, 13, 8, 1400]
+sums.sort((a,b) => a-b);
+let allTogether = sums[1] + [sums.length -2]
+console.log(allTogether)
+
+//OR
+
+function sumSecond (arr) {
+    let sorted = arr.sort((a,b) => a-b)
+    alert(sorted[1] + [sorted.length-2])
+}
+sumSecond([4, 10, 90, 80, 13, 8, 1400])
+
 // Parse nice int from char problem
 function getAge(inputString){
   return parseInt(inputString)
