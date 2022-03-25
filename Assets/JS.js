@@ -1,3 +1,8 @@
+//multiply array * 2
+function maps(x){
+  return x.map(n => n * 2);
+}
+
 //Merge two sorted arrays into one
 
 function mergeArrays(arr1, arr2) {
