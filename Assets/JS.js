@@ -1,3 +1,14 @@
+//heads or tails 
+function headsTails() {
+  let outcome = Math.random()
+  if (outcome < 0.5) {
+    console.log("It's Heads")
+  } else {
+    console.log("It's tails")
+  }
+}
+headsTails()
+
 //multiply array * 2
 function maps(x){
   return x.map(n => n * 2);
