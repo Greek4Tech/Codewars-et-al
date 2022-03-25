@@ -1,3 +1,9 @@
+//Merge two sorted arrays into one
+
+function mergeArrays(arr1, arr2) {
+return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
+}
+
 //Create a function that takes in an array of numbers
 //Alert the sum of the second lowest and the second highest number
 
