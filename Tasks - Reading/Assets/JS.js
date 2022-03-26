@@ -1,3 +1,18 @@
+//Factory of LoL champs
+
+function FactoryOfLoLChamps (Q, W, Ult, DiffLevel) {
+    this.Q = Q
+    this.W = W
+    this.Ult = Ult
+    this.DiffLevel = DiffLevel
+    this.eliminate = function () {
+        console.log("You will pay for this")
+    }
+}
+
+let Thresh = new FactoryOfLoLChamps ("Death Sentence", "Dark Passage", "The Box", "Moderate" ) 
+let Zeri = new FactoryOfLoLChamps("Burst Fire", "UltraShock Lazer", "Lighting Crush", "Hard")
+
 //Hello Object - https://javascript.info/object#check-for-emptiness
 let obj =  {}
   obj.name: "Pete",
