@@ -1,3 +1,10 @@
+//filter out "the geese"
+
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter(b => !geese.includes(b));
+};
+
 //Factory of LoL champs
 
 function FactoryOfLoLChamps (Q, W, Ult, DiffLevel) {
