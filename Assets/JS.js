@@ -1,3 +1,15 @@
+//Sentence Smash
+
+smash = function (words) {
+  return words.join(" ");
+};
+
+smack()
+//smash words together 
+//return a sentence
+
+//['hello', 'world', 'this', 'is', 'great'] => 'hello world this is great'
+
 //heads or tails 
 function headsTails() {
   let outcome = Math.random()
