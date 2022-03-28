@@ -1,3 +1,9 @@
+//Convert a string to an array
+
+function splitString(string) {
+  return string.split(' ')
+}
+
 //filter out "the geese"
 
 function gooseFilter (birds) {
