@@ -1,3 +1,5 @@
+
+
 //Convert a string to an array
 
 function splitString(string) {
