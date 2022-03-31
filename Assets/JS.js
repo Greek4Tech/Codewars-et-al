@@ -1,3 +1,19 @@
+//count sheep
+
+let countSheep = function (num){
+  let str =""
+  for (let i=1; i<=num; i++)  {
+    str += `${i} sheep...`
+  }
+    return str
+  }
+//multiply 2 numbers 
+
+function multiply(a,b) {
+  return a*b
+}
+
+
 //Sentence Smash
 
 const smash = words => words.join(' ');
