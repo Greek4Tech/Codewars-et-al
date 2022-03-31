@@ -1,3 +1,9 @@
+//Decibel Sound - Codewars 
+
+function dBScale(intensity) {
+  return Math.round(dB = 10 * Math.log10 (intensity/Math.pow(10, -12)))
+  }
+
 //count sheep
 
 let countSheep = function (num){
