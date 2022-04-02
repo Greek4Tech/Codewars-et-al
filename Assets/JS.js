@@ -9,6 +9,15 @@ function firstNonConsecutive(arr) {
   return null
 }
 
+function nonConse (arr)  {
+  for (let i=0; i<=arr.length; i++) {
+      if (Math.abs((arr [i] - arr[i+1])) >  1) {
+  console.log (`the first non-consecutive executive number is ${arr[i+1]}`)
+  }       
+  }
+  return null
+}
+
 
 // Decibel Sound - Codewars 
 
