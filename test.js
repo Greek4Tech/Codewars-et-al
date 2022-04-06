@@ -1,7 +1,7 @@
-function nonNegative (n) {
-    let res = []
-    for (let i=1; i<=n; i++) {
-    res.push(Math.pow(2,i))
-    }
-    console.log(res)
+function findMultiples(int,limit) {
+let res = []
+for(let i=int; i<=limit; i+=int) {
+    res.push(i)
+} 
+console.log(res) 
 }
