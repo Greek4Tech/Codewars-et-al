@@ -1,8 +1,7 @@
-function consecutive (arr) {
-    for (i=0; i<=arr.length; i++) {
-        if (arr[i]+1 !== arr[i+1]) {
-            console.log(`${arr[i+1]} is not conse`)
-        }
-    } return null 
-
+function nonNegative (n) {
+    let res = []
+    for (let i=1; i<=n; i++) {
+    return res.push(Math.pow(2,i))
+    }
+    console.log(res)
 }
