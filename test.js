@@ -1,8 +1,11 @@
 //every other index 
 
-function zeroOne (size) {
-    let arr = []
-        for (let i=0; i<=size; i++) {
-            arr+=i%2
-        } return arr
-}
+function isItAString(str) {
+    str.split('')
+    if (str.endsWith ("?")) {
+        alert('yes, it is a question')
+    } else {
+        alert('no')
+    }
+    
+    }
