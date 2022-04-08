@@ -1,6 +1,8 @@
-//remove first and last character 
+//every other index 
 
-function removeStuff (str) {
-    return str.slice(1,-1)
-} 
-removeStuff("Original")
+function zeroOne (size) {
+    let arr = []
+        for (let i=0; i<=size; i++) {
+            arr+=i%2
+        } return arr
+}
