@@ -1,11 +1,5 @@
-//every other index 
-
-function isItAString(str) {
-    str.split('')
-    if (str.endsWith ("?")) {
-        alert('yes, it is a question')
-    } else {
-        alert('no')
-    }
+function removeStr(str) {
+    str = str.slice(1,-1)
     
-    }
+    return str
+}
