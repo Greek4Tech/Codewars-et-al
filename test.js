@@ -1,7 +1,6 @@
-function returnString (num) {
-    let str = ''; 
-        for (let i=1; i<=num; i++) {
-            str = str + i%2
-            return str
-        }
+function numberOfDays (year, month) {
+    let days 
+    for (i=1; i<=12; i++) {
+        
+    }
 }
