@@ -1,12 +1,3 @@
-function numberOfDays (year, month) {
-    let days 
-    for (i=1; i<=12; i++) {
-        if (i == 1 || i == 3 || i == 5) {
-            console.log('this month has 31 days')
-        }
-    }
-}
-
 let getDaysInMonth = function(month,year) { 
     // Here January is 1 based 
     //Day 0 is the last day in the previous month 
