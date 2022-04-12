@@ -26,5 +26,30 @@ select {
 }
 
 .column {
+    flex:1; 
     border: 2px solid lightgreen;
+}
+
+img {
+    max-width: 900px;
+    max-height: 700px;
+}
+
+span {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+#dog-name {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#left-column {
+    text-align: center; 
+}
+
+ul {
+    list-style-type: none;
 }
