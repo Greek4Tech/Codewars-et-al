@@ -12,6 +12,3 @@ function howGood (arr, score) {
                 console.log("I guess I suck")
             }
     } 
-
-
-[5,10,15,20,25]

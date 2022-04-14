@@ -23,6 +23,11 @@ select.addEventListener('change', event => {
     
     let url = `https://dog.ceo/api/breed/${event.target.value}/images/random`
     getDoggoImg(url)
+    doggoInfo.assignMF()
+    doggoInfo.assignAge()
+    doggoInfo.assignLikes()
+    doggoInfo.assignDislikes()
+    doggoInfo.assignFunFact()
 })
 
 const img = document.querySelector('.dog-img')
@@ -49,12 +54,70 @@ const doggoInfo = {
 
     factList: ['Remembers every squirrel they have ever seen','Wishes they knew how cars work','Thinks pond water tastes the very best','Can carry three tennis balls at once and is very proud of that.','Eats grass for fun',"Doesn't actually know their own name, just likes your voice.",'Understands more words than you think','Saw a shooting star once','Will only sleep with 2 blankets','Ate an entire cake at a birthday party before anyone noticed','Can hear a bag of cheese opening from half a mile away',"Believes that frogs are smarter than they look","Once gave a grasshopper a ride on their nose","Doesn't understand the stock market",'Can sprint up to 30mph',"Believes they could win Crufts, but can't afford a plane ticket.","Wishes there weren't so many different streaming services.",'Secretly enjoys baths, but will never tell.','Ate a bee and got stung, then did it again the next day','Unsure of the meaning of life, but believes it may involve bacon.','Truly believes they are a cat','Can actually count to 12, but has never had a reason to do so.','Feels a sense of longing when watching birds migrate in the Fall.',"Enjoys watching SNL, but doesn't understand the jokes",'Sheds enough hair to fill a 5-gallon bucket each week.','Responds to commands in English, German, and Klingon.','Only pretends to understand what you are saying, loves you anyway.','Caught a squirrel once, and now dreams about that moment every single night.',
     "Knows exactly how the universe will end, but doesn't care.",'Would be a top-notch violinist, if they had thumbs.','Dreams of breaking into the dog food plant down the road and eating EVERYTHING.','Can see one more color than any other dog. You will never know which one it is.','Won the award for "fastest lick of the kitchen counter" in 2018 (self-awarded).','Ears and tail are the same length (big ears)!','Takes charge and loudly demands treats','Very bouncy, scientists suspects that legs may contain springs.',"Prefers to eat at the same time as the humans - it's only polite!",'Originally from Tijuana, unkown level of fluency in Spanish.','Favorite hobby is sculpting (the fence, with their mouth)','Can eat an entire loaf of bread in one sitting',"Thinks they are the cat's best friend, but the cat considers them an acquaintence, at best.",'Chooses whether to listen to you on a cas-by-case basis','Can escape any harness ever made','Has an extra toe','Caught a butterfly and immediately spit it back out','Fences are less of an obstacle and more of a suggestion','Terrified of the kitten','Once ate an entire pack of gum','Can consume a rawhide chew in 30 seconds','Farts every time they sit down','Can howl on pitch','Will immediately present belly for rubs','Dream job: bacon taste-tester','Career: retired actor/consultant'],
-    MF: '',
 
-    rname: '',
-    age: '',
-    likes: '',
-    dislikes: '',
-    fact: '',
+   MF: '',
+
+   rname: '',
+
+   age:'',
+
+   likes: '',
+
+   dislikes: '',
+
+   fact: '',
+
+   assignMF () {
+       let x = (Math.floor(Math.random () * 2) == 0)
+       if (x) {
+           this.MF = "Female";
+           this.assignName(this.fNames)
+       } else {
+           this.MF = "Male";
+           this.assignName(this.mNames)
+       }
+   }, 
+
+   assignName(array) {
+       this.rname = array[Math.floor(Math.random()*array.length)]
+       document.getElementById("dog-name").innerHTML = `${this.rname}`
+   },
+
+   assignAge() {
+       this.age = Math.floor(Math.random()*16 + 1)
+       document.getElementById("age").innerHTML = `${this.age}`
+   },
+
+   yatesShuffle(array) {
+       let m = array.length, t, i;
+       //while there remian elements to shuffle...
+       while (m) {
+           //pick a remaining element...
+           i = Math.floor(Math.random() * m--);
+           //and swap it with the current element
+           t = array[m];
+           array[m] = array[i];
+           array[i] = t;
+           
+       }
+       return array;
+   },
+
+
+    assignLikes() {
+        this.likes = this.yatesShuffle(this.likesList).slice(0,2)
+        document.getElementById("likes").innerHTML = `Likes: ${this.likes[0]}, ${this.likes[1]}`
+    },
+
+    assignDislikes() {
+        this.dislikes = this.yatesShuffle(this.dislikesList).slice(0,2)
+        document.getElementById("likes").innerHTML = `Dislikes: ${this.dislikes[0]}, ${this.dislikes[1]}`
+    },
+
+    assignFunFact() {
+        this.fact = this.factList[Math.floor(Math.random()*this.factList.length)]
+        document.getElementById("fun-fact").innerHTML = `Additional Info: ${this.fact}`
+    }
+
 
 }
