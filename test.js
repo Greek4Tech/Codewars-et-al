@@ -1,25 +1,17 @@
-function numberOfDays (year, month) {
-    let days 
-    for (i=1; i<=12; i++) {
-        if (i == 1 || i == 3 || i == 5) {
-            console.log('this month has 31 days')
-        }
-    }
+function zeroOne(num) {
+    newArr = []
+        //return 1,0,1,0
+            //for loop [ind0,ind1,ind2,ind3,] => 
+                //for 0/2 = 0 (0); 1/2 = 0.5 (0+); 2/2 = 1 (0)
+                    for (let i=0; i<=num; i++) {
+                        if (i%2 == 0) {
+                            //we want this to be one
+                            newArr.push(arr(i))
+                        } else {
+                            //we want this to be 0
+                            newArr.push(arr(i))
+                        }
+                    }
 }
 
-let getDaysInMonth = function(month,year) { 
-    // Here January is 1 based 
-    //Day 0 is the last day in the previous month 
-    
-    return new Date(year, month, 0).getDate();} 
-    
-    // Here January is 0 based // 
-
-let getDaysInMonth = function(month,year) { 
-    
-    return new Date(year, month+1, 0).getDate();} 
-    
-    console.log(getDaysInMonth(1, 2012)); 
-    console.log(getDaysInMonth(2, 2012)); 
-    console.log(getDaysInMonth(9, 2012)); 
-    console.log(getDaysInMonth(12, 2012));
+zeroOne(5)
