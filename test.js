@@ -1,24 +1,7 @@
-function zeroOne (num) {
-    let str = ''
-
-    for (let i=1; i<=num; i++) 
-
-    str = str + i%2
-
-    return str
-
-} 
-
-//5 '10101'
-
-function consecutive (arr) {
-    for (let i=0; i<arr.length; i++){
-        if (arr[i] + 1 != arr[i+1]) {
-            break
-            return ('not consecutive') 
-    } else {
-        return ('all good')
-    }
-}
-
-consecutive ([1,2,3,6,11])
+function positiveSum(arr) {
+    //filter the positive
+    const result = arr.filter(e => e>0)
+    //add things 
+    const resultMore = result.map(acc, c => acc+c, 0)
+    return resultMore
+  }
