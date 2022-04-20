@@ -1,6 +1,9 @@
-function takeIn (num) {
-  let str = ''
-  for (i=1; i<=num; i++) {
-  str = str + i%2
-  } return str
+function multis (num1, num2) {
+  let arr = []
+  for (let i=num1; i<=num2; i=i+num1) {
+    arr.push(i)
+  } return
 }
+
+//i=i+1; 
+//(2,8)
