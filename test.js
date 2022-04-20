@@ -1,10 +1,6 @@
-function cascade (arr, num) {
-  let newArr = []
-  //we want a forloop 
-  for (let i=0; i<arr.length; i++) {
-     newArr = arr.slice(i, num)
-  } return arr
+function takeIn (num) {
+  let str = ''
+  for (i=1; i<=num; i++) {
+  str = str + i%2
+  } return str
 }
-
-//[5,6,7,8,9,10] num =3 
-//=> 567 8910
