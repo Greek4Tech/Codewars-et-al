@@ -1,9 +1,13 @@
-function multis (num1, num2) {
-  let arr = []
-  for (let i=num1; i<=num2; i=i+num1) {
-    arr.push(i)
-  } return
-}
+//Create a button that adds 1 to a botScore stored in localStorage
 
-//i=i+1; 
+if(!localStorage.getItem('botScore')){ 
+  localStorage.setItem('botScore', 0) 
+} 
+
+document.querySelector('button').addEventListener('click', anothaOne) 
+function anothaOne(){ 
+  let botScore = Number(localStorage.getItem('botScore')) botScore = botScore + 1 
+}
+  
+//setting the 'botScore' equal to botScore localStorage.setItem('botScore', botScore) }
 //(2,8)
