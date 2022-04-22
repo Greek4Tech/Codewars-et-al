@@ -1,14 +1,13 @@
-// if (!localStorage.getItem('botScore')) {
-//     localStorage.setItem('botScore', 0)
-// }
+//add 1 to the botScore
 
-document.querySelector('button').addEventListener('click', anotherWan)
-
-function anotherWan () {
-    let botScore = Number(localStorage.getItem('botScore'))
-
-    botScore = botScore + 1
-
-    localStorage.setItem('botScore', botScore)
+if(!localStorage.getItem('botScore')){
+    localStorage.setItem('botScore', 0)
 }
 
+document.querySelector('button').addEventListener('click', anotherOne)
+
+function anotherOne () {
+    let botScore = Number(localStorage.getItem('botScore'))
+    botScore = botScore + 1
+    localStorage.setItem('botScore', botScore)
+}
