@@ -1,11 +1,8 @@
-if (!localStorage.getItem('botScore')) {
-  localStorage.setItem('botScore', 0)
+function returnStuff (num) {
+  let str = ''
+  for (let i=0; i<=num; i++)
+  str=str + i%2
+  return str
+
 }
 
-document.querySelector('button').addEventListener('click', anotherOne)
-
-function anotherOne () {
-  let botScore = Number(localStorage.getItem('botScore'))
-  botScore = botScore + 1
-  localStorage.setItem('botScore', botScore)
-}
