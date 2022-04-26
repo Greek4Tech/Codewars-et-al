@@ -1,3 +1,5 @@
-function invert(array) {
-  return array.map( x => x === 0 ? x : -x);
-}
+function something(arr) {
+  let newArr = []
+
+  arr.forEach(n => { if (n%2===0) newArr.push(n)} return newArr)
+
