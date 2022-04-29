@@ -6,3 +6,8 @@ function takeInArr (arr) {
     return result = arr.filter(n => n>0).reduce((x,y) => x+y,0)
   }
 }
+
+function returnSum (arr) {
+  return arr.reduce((x,y) => x + y*y,0)
+}
+
