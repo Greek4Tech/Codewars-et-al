@@ -1,5 +1,5 @@
 //test
 
-function sum(numbers) {
-  return numbers.reduce((a, b) => a + b, 0);
+function simpleMultiplication(n) {
+  return n * (n % 2 ? 9 : 8);
 }
