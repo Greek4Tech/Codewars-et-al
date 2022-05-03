@@ -46,12 +46,16 @@ function buttonOne () {
             player1Turn = false
             //mark the tile as occupied
             tileOneIsOccupied = true
+            //can I run this function here
+            
             //if it isn't then: 
         } else {
                 document.querySelector('.one').innerHTML = "O" 
                 player1Turn = true
                 tileOneIsOccupied = true
-        }
+                //can I run this function here
+        } checkWinner()
+
             }
 }
 
@@ -63,11 +67,35 @@ function buttonTwo () {
             document.querySelector('.two').innerHTML = "X" 
             player1Turn = false
             tileTwoIsOccupied = true
+            //can I run this function here
+        
         } else {
                 document.querySelector('.two').innerHTML = "O" 
                 player1Turn = true
                 tileTwoIsOccupied = true
-        }
+                //can I run this function here
+            
+        } checkWinner()
+            }
+}
+
+function buttonThree () {
+    if (tileThreeIsOccupied) {
+        alert('tile already occupied')
+    } else {
+        if (player1Turn) {
+            document.querySelector('.three').innerHTML = "X" 
+            player1Turn = false
+            tileThreeIsOccupied = true
+            //can I run this function here
+            
+        } else {
+                document.querySelector('.three').innerHTML = "O" 
+                player1Turn = true
+                tileThreeIsOccupied = true
+                //can I run this function here
+            
+        } checkWinner()
             }
 }
 
@@ -83,23 +111,7 @@ function buttonThree () {
                 document.querySelector('.three').innerHTML = "O" 
                 player1Turn = true
                 tileThreeIsOccupied = true
-        }
-            }
-}
-
-function buttonThree () {
-    if (tileThreeIsOccupied) {
-        alert('tile already occupied')
-    } else {
-        if (player1Turn) {
-            document.querySelector('.three').innerHTML = "X" 
-            player1Turn = false
-            tileThreeIsOccupied = true
-        } else {
-                document.querySelector('.three').innerHTML = "O" 
-                player1Turn = true
-                tileThreeIsOccupied = true
-        }
+        } checkWinner()
             }
 }
 
@@ -115,7 +127,7 @@ function buttonFour () {
                 document.querySelector('.four').innerHTML = "O" 
                 player1Turn = true
                 tileFourIsOccupied = true
-        }
+        } checkWinner()
             }
 }
 
@@ -131,12 +143,12 @@ function buttonFive () {
                 document.querySelector('.five').innerHTML = "O" 
                 player1Turn = true
                 tileFiveIsOccupied = true
-        }
+        } checkWinner()
             }
 }
 
 function buttonSix () {
-    if (tileFiveIsOccupied) {
+    if (tileSixIsOccupied) {
         alert('tile already occupied')
     } else {
         if (player1Turn) {
@@ -147,7 +159,7 @@ function buttonSix () {
                 document.querySelector('.six').innerHTML = "O" 
                 player1Turn = true
                 tileSixIsOccupied = true
-        }
+        } checkWinner()
             }
 }
 
@@ -163,7 +175,7 @@ function buttonSeven () {
                 document.querySelector('.seven').innerHTML = "O" 
                 player1Turn = true
                 tileSevenIsOccupied = true
-        }
+        } checkWinner()
             }
 }
 
@@ -179,7 +191,7 @@ function buttonEight () {
                 document.querySelector('.eight').innerHTML = "O" 
                 player1Turn = true
                 tileEightIsOccupied = true
-        }
+        } checkWinner()
             }
 }
 
@@ -195,21 +207,38 @@ function buttonNine () {
                 document.querySelector('.nine').innerHTML = "O" 
                 player1Turn = true
                 tileNineIsOccupied = true
-        }
+        } checkWinner()
             }
 }
 
 //winning conditions 
-//[1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9], [7,5,3]
+//[1,2,3], [4,5,6], [7,8,9], [1,4,7], [1,4,7], [3,6,9], [1,5,9], [7,5,3]
 //want a function that runs every time we play
 function checkWinner () {
     //winning condition 
-    if (document.querySelector('.one').innerHTML === "X" && document.querySelector('.two').innerHTML === "X" && document.querySelector('.three').innerHTML === "X") {
-        return "we have a winner"
-    } return tie
+    console.log(document.querySelector('.one').innerHTML === "X", document.querySelector('.two').innerHTML === "X", document.querySelector('.three').innerHTML === "X")
+
+    if (    
+        // [1,2,3]
+        (document.querySelector('.one').innerHTML === "X" && document.querySelector('.two').innerHTML === "X" && document.querySelector('.three').innerHTML === "X") || 
+        // [4,5,6]
+        (document.querySelector('.four').innerHTML === "X" && document.querySelector('.five').innerHTML === "X" && document.querySelector('.six').innerHTML === "X") || 
+        // [7,8,9]
+        (document.querySelector('.seven').innerHTML === "X" && document.querySelector('.eight').innerHTML === "X" && document.querySelector('.nine').innerHTML === "X") ||
+        // [1,4,7]
+        (document.querySelector('.one').innerHTML === "X" && document.querySelector('.four').innerHTML === "X" && document.querySelector('.seven').innerHTML === "X") ||
+        // [3,6,9]
+        (document.querySelector('.three').innerHTML === "X" && document.querySelector('.six').innerHTML === "X" && document.querySelector('.nine').innerHTML === "X") || 
+        // [1,5,9]
+        (document.querySelector('.one').innerHTML === "X" && document.querySelector('.five').innerHTML === "X" && document.querySelector('.nine').innerHTML === "X") || 
+        // [7,5,3]
+        (document.querySelector('.seven').innerHTML === "X" && document.querySelector('.five').innerHTML === "X" && document.querySelector('.three').innerHTML === "X")
+        ){
+                document.querySelector('.winner').innerHTML = "Player X wins"
+                console.log('hello')
+        } 
     //check if the winning conditions were met 
-    // if (winningCondition === true) {
-        
+    // if (winningCondition === true) {   
     } 
 
 
