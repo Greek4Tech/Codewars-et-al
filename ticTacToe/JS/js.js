@@ -200,3 +200,16 @@ function buttonNine () {
 }
 
 //winning conditions 
+//[1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9], [7,5,3]
+//want a function that runs every time we play
+function checkWinner () {
+    //winning condition 
+    if (document.querySelector('.one').innerHTML === "X" && document.querySelector('.two').innerHTML === "X" && document.querySelector('.three').innerHTML === "X") {
+        return "we have a winner"
+    } return tie
+    //check if the winning conditions were met 
+    // if (winningCondition === true) {
+        
+    } 
+
+
