@@ -221,6 +221,8 @@ function checkWinner () {
     if (    
         // [1,2,3]
         (document.querySelector('.one').innerHTML === "X" && document.querySelector('.two').innerHTML === "X" && document.querySelector('.three').innerHTML === "X") || 
+        // [2,5,8]
+        (document.querySelector('.two').innerHTML === "X" && document.querySelector('.five').innerHTML === "X" && document.querySelector('.eight').innerHTML === "X") || 
         // [4,5,6]
         (document.querySelector('.four').innerHTML === "X" && document.querySelector('.five').innerHTML === "X" && document.querySelector('.six').innerHTML === "X") || 
         // [7,8,9]
@@ -235,8 +237,30 @@ function checkWinner () {
         (document.querySelector('.seven').innerHTML === "X" && document.querySelector('.five').innerHTML === "X" && document.querySelector('.three').innerHTML === "X")
         ){
                 document.querySelector('.winner').innerHTML = "Player X wins"
-                console.log('hello')
-        } 
+        } else if (
+            (document.querySelector('.one').innerHTML === "O" && document.querySelector('.two').innerHTML === "O" && document.querySelector('.three').innerHTML === "O") || 
+            // [2,5,8]
+            (document.querySelector('.two').innerHTML === "O" && document.querySelector('.five').innerHTML === "O" && document.querySelector('.eight').innerHTML === "O") ||    
+            // [4,5,6]
+            (document.querySelector('.four').innerHTML === "O" && document.querySelector('.five').innerHTML === "O" && document.querySelector('.six').innerHTML === "O") || 
+            // [7,8,9]
+            (document.querySelector('.seven').innerHTML === "O" && document.querySelector('.eight').innerHTML === "O" && document.querySelector('.nine').innerHTML === "O") ||
+            // [1,4,7]
+            (document.querySelector('.one').innerHTML === "O" && document.querySelector('.four').innerHTML === "O" && document.querySelector('.seven').innerHTML === "O") ||
+            // [3,6,9]
+            (document.querySelector('.three').innerHTML === "O" && document.querySelector('.six').innerHTML === "O" && document.querySelector('.nine').innerHTML === "O") || 
+            // [1,5,9]
+            (document.querySelector('.one').innerHTML === "O" && document.querySelector('.five').innerHTML === "O" && document.querySelector('.nine').innerHTML === "O") || 
+            // [7,5,3]
+            (document.querySelector('.seven').innerHTML === "O" && document.querySelector('.five').innerHTML === "O" && document.querySelector('.three').innerHTML === "O")
+            ){
+                    document.querySelector('.winner').innerHTML = "Player O wins"
+            } else {
+                return "it's a tie"
+            }
+        
+
+
     //check if the winning conditions were met 
     // if (winningCondition === true) {   
     } 

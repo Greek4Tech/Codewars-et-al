@@ -6,15 +6,15 @@ body {
 
 .bigPicture {
     max-width: 31rem;
-    padding: 4rem;
+    padding: 2rem;
     margin: 0 auto;
   }
 
   button {
     height: 8rem;
-    width: 33%;
+    width: 8rem;
     font-size: 4rem;
-    /* vertical-align: top; */
+    vertical-align: top;
   }
 
 section {
