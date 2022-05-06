@@ -1,5 +1,3 @@
-// 
-
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-    return distanceToPump/mpg <= fuelLeft
-  };
+function sumMix(x){
+  return x.reduce ((a,c) => a+ Number(c),0 )
+  }
