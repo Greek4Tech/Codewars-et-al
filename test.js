@@ -1,8 +1,10 @@
-function sumMix(x){
-  return x.reduce ((a,c) => a+ Number(c),0 )
-  }
+function takeNum (num) {
+  let str = ''
+  for (let i=0; i<=num; i++)
+    str = str + i%2  
+   return str  
+}
 
-  function twoSort(s) {
-    let firstWord = s.sort((a,b)=>a-b).charAt(0)
-    return firstWord
-    }
+//010101
+//num = 5
+//'
