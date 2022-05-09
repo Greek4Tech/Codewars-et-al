@@ -1,15 +1,13 @@
-function mults (num1, num2) {
-    let arr = []
-    for (let i=num1; i<=num2; i=i+num1) {
-        arr.push(i)
-        return arr
+function warnSheep (arr) {
+    arr.reverse()
+    if (arr[0]==='wolf') {
+        console.log('go away')
+    } for (let i=0; i<arr.length, i++) {
+        return `watch out ${i+1}, wolf is befind you`
     } 
+    
 }
 
-function takeNum (num) {
-    return String(num).split('').map(Number).reverse()
-}
+//if there is an sheep warn the next sheep
 
-function takeIn (arr) {
-    return arr.filter(r => r % 2===0 ? newArr.push(r) : )
-}
+//if the wolf is at the end tell him to go away
