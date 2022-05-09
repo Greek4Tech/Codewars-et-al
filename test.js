@@ -1,13 +1,6 @@
-function warnSheep (arr) {
-    arr.reverse()
-    if (arr[0]==='wolf') {
-        console.log('go away')
-    } for (let i=0; i<arr.length, i++) {
-        return `watch out ${i+1}, wolf is befind you`
-    } 
-    
+function mults (num1, num2) {
+    let arr = []
+    for (let i=num1; i<=num2; i=i+num1)
+    arr.push(i)
+    return arr
 }
-
-//if there is an sheep warn the next sheep
-
-//if the wolf is at the end tell him to go away
