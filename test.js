@@ -7,7 +7,10 @@ let greenEnergy = obj = obj['Fuel Type'] = 'avocado oil'
 
 function evensNums (arr) {
     let evens = []
-    arr.forEach (n=> n%2===0 ? evens.push(n) : 0)
+    arr.forEach (n=> { 
+        if (n%2===0)
+        evens.push(n)
+    })
     return evens 
 }
 
