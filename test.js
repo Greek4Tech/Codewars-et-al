@@ -6,3 +6,10 @@ function mults (num1, num2) {
     } 
 }
 
+function takeNum (num) {
+    return String(num).split('').map(Number).reverse()
+}
+
+function takeIn (arr) {
+    return arr.filter(r => r % 2===0 ? newArr.push(r) : )
+}
