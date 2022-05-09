@@ -1,6 +1,4 @@
-function mults (num1, num2) {
+function reverseArr (num) {
     let arr = []
-    for (let i=num1; i<=num2; i=i+num1)
-    arr.push(i)
-    return arr
+    return String(num).split('').map(Number).reverse()
 }
