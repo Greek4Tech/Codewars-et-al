@@ -1,20 +1,11 @@
-function reverseArr (num) {
-    let arr = []
-    return String(num).split('').map(Number).reverse()
+function warnSheep (arr) {
+    let position = arr.reverse().indexOf('wolf')
+    return position === 0 ? 'go away wolf' : `care sheep, wolf is behind you`
 }
 
-let greenEnergy = obj = obj['Fuel Type'] = 'avocado oil'
+// [s, s, s, w, s]
+// [0, 1, 2, 3, 4]
+// [s, w, s, s, s]
 
-function evensNums (arr) {
-    let evens = []
-    arr.forEach (n=> { 
-        if (n%2===0)
-        evens.push(n)
-    })
-    return evens 
-}
-
-function findsWolves (arr) {
-const position = arr.reverse().indexOf('wolf')
-return position === 0 ? alert ('go aways wolvesss') : alert (`Sheep ${position} be aware`)
-}
+//position of wolf is 3
+//reverse is 1 
