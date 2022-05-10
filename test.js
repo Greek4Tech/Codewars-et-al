@@ -9,11 +9,11 @@ cascading ([0,1,2,3,4,5,6], 3)
 
 function integer (num) {
     let arr = []
-    for (let i=num; i<=0; i--) {
+    for (let i=num; i>0; i--) {
         arr.push(i)
     } return arr
 }
 
 function returnElems (arr) {
-    return arr.filter(n,i=> n%i===0)
+    return arr.filter((e,i)=> e%i===0)
 }
