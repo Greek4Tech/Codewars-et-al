@@ -1,4 +1,6 @@
-function ownIndex (arr) {
+function sumPos (arr) {
 
-    return arr.filter((e, i) => e % i ===0)
+    return arr.reduce((a,b) => a+(b > 0 ? b : 0))
+    
 } 
+
