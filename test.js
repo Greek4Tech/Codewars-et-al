@@ -1,13 +1,6 @@
-//button 
-
-if (!localStorage.getItem('botScore')) {
-    localStorage.setItem('botScore', 0)
-}
-
-document.querySelector('button').addEventListener('click', anotherOne)
-
-function anotherOne {
-    let botScore = Number(localStorage.getItem('botScore'))
-    localStorage.setItem('botScore', botScore)
-    botScore = botScore + 1
+function removeS (str) {
+    let newArr = str.split('')
+    newArr.shift()
+    newArr.pop()
+    return newArr 
 }
