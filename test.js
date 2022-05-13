@@ -1,6 +1,13 @@
-function sumPos (arr) {
+//button 
 
-    return arr.reduce((a,b) => a+(b > 0 ? b : 0))
-    
-} 
+if (!localStorage.getItem('botScore')) {
+    localStorage.setItem('botScore', 0)
+}
 
+document.querySelector('button').addEventListener('click', anotherOne)
+
+function anotherOne {
+    let botScore = Number(localStorage.getItem('botScore'))
+    localStorage.setItem('botScore', botScore)
+    botScore = botScore + 1
+}
