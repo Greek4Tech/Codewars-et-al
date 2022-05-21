@@ -1,5 +1,10 @@
-function cascading (arr, num) {
-    let newArr=[]
-    for (let i=0; i<arr.length; i++) {
-        newArr.push(arr.slice(i, i+num))
-    } return newArr.filter(n=> n.length===num)}
+var ops = {
+    'AND': (a, b) => a && b,
+    'OR': (a, b) =>  a || b,
+    'XOR': (a, b) => a !== b
+  }
+  
+  
+  function logicalCalc(array, op){
+    return array.reduce(ops[op]);
+  }
