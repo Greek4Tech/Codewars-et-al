@@ -1,6 +1,3 @@
-//fname, lname
+//multiple of own index
+    //element/index === 0
 
-function nameSwap (str) {
-    str.split(' ').reverse().join('')
-    
-}
