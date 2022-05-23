@@ -12,3 +12,12 @@ function scores (arr) {
         } return score
     }
 }
+
+function totalsScores (games) {
+    let total = 0 
+    games.map(n=> { 
+        if (n[0]>n[2]) { 
+            total = total + 3 
+            } else if (n[0] === n[2]) {
+                total = total + 1 } }) 
+                return total }
