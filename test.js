@@ -1,6 +1,14 @@
-//multiple of own index
-    //element/index === 0
+//scores
 
-function multipleArr (arr) {
-   return arr.filter((e,i) => e % i ===0)
+function scores (arr) {
+    let score = 0
+    for (let i = 0 ; i< arr.length; i++) {
+        if (arr[0] > arr[2]) {
+            score = score + 3
+        } else if (arr[0] === arr[2]) {
+            score = score + 1
+        } else {
+            score = score + 0 
+        } return score
+    }
 }
