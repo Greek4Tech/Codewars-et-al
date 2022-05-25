@@ -1,5 +1,9 @@
-function charSequence (str) {
-    if (str = '' || str.length ===0) {
-        return Null
-    } str.split('').splice(1,-1).join(' ')
+if (!localStorage) {
+    localStorage.setItem('botScore', 0)
+} localStorage.getItem('botScore', botScore)
+
+function botScore () {
+    botScore = botScore + 1
+    localStorage.setItem('botScore', botScore)
+    
 }
