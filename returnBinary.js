@@ -1,3 +1,1 @@
-function shortcut(string){
-    return string.replace(/[aeiou]/g,'')
-  }
+toBinary = (n) => parseInt(n.toString(2));
