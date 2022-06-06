@@ -1,3 +1,6 @@
 function removeExclamationMarks(s) {
-    return '';
+    return s.split('!').join('');
   }
+
+
+  //test//
