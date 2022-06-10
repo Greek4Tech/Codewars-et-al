@@ -8,4 +8,4 @@ let promise = new Promise(function(resolve, reject) {
   
   promise.then(alert);
 
-//
+//the outcome will be 1! You can have only one resolve or reject. 
