@@ -1,6 +1,6 @@
 function coloring () {
-  for (let i=0; i<table.row.length; i++) {
-    let row = table.row[i]
-    row.cells[i]style.backgroundColor= 'red'
+  for (let i=0; i<table.rows.length; i++) {
+    let row = table.rows[i]
+    rows.cell[i].background
   }
 }
