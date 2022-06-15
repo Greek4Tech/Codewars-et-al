@@ -33,6 +33,7 @@ async function demoGithubUser() {
     }
 
   }
+  }
 
     alert(`Full name: ${user.name}.`);
     
