@@ -6,26 +6,23 @@ class HttpError extends Error {
   }
 }
 
-function loadJson(url) {
-  return fetch(url)
-    .then(response => {
+async function loadJson(url) {
+  let response = await fetch(url) 
       if (response.status == 200) {
         return response.json();
       } else {
         throw new HttpError(response);
       }
-    });
-}
+    };
 
 // Ask for a user name until github returns a valid user
-function demoGithubUser() {
+async function demoGithubUser() {
   let name = prompt("Enter a name?", "iliakan");
-
-  return loadJson(`https://api.github.com/users/${name}`)
-    .then(user => {
+  
+  let response = await loadJson(`https://api.github.com/users/${name}`)
       alert(`Full name: ${user.name}.`);
       return user;
-    })
+    }
     .catch(err => {
       if (err instanceof HttpError && err.response.status == 404) {
         alert("No such user, please reenter.");
