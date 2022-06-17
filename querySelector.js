@@ -10,8 +10,9 @@ window['age-table'].querySelectorAll('label')
 document.querySelectorAll('tr > td:first-child');
 
 // The form with name="search".
-
+document.getElementsByName('#search')
 
 // The first input in that form.
+
 // The last input in that form.
 // Open the page table.html in a separate wi
