@@ -1,8 +1,13 @@
 //Write a loop which prompts for a number greater than 100. If the visitor enters another number – ask them to input again.
-function testing() {
-let input = prompt('give a number')
-while (input<100) {
-    alert('give a number greater than 100')
-    let additional = prompt('give another number')
-} console.log(input)
-}
+// let word = prompt('give us a number')
+
+// do {
+//     word
+// } while (word<100 && word)
+
+let testing = (n) => {
+for (let i=2; i<=n; i++) {
+    if (i % 2 !=0 && i % 3 !=0) {
+        console.log(i)
+    }
+}}
