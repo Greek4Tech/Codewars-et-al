@@ -1,9 +1,7 @@
-async function fetch (url) {
-    let response = await fetch(url)
+function minMax (arr) {
+    let arrSorted = arr.sort((a,b) => a - b)
+    console.log(arrSorted)
+    return `Min is ${arrSorted[0]}, Max is ${arrSorted[arr.length-1]}`
 
-    if (response === 200) {
-        let json = await response.json
-        return json
-    }
-    throw new Error 
+    let min 
 }
