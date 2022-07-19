@@ -3,5 +3,5 @@ function minMax (arr) {
     console.log(arrSorted)
     return `Min is ${arrSorted[0]}, Max is ${arrSorted[arr.length-1]}`
 
-    let min 
+    let min = Math.min(...arr)
 }
