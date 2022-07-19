@@ -2,8 +2,8 @@ async function fetch (url) {
     let response = await fetch(url)
 
     if (response === 200) {
-        let json = await 
-        return response.json
+        let json = await response.json
+        return json
     }
     throw new Error 
 }
